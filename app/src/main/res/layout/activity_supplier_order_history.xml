@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.YourOrdersActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:id="@+id/ll_main"
+       android:visibility="visible"
+       android:background="@color/white">
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/order_number"
+          android:textSize="@dimen/activity_textSize_large"
+          android:textColor="@color/colorPrimary"
+          android:layout_margin="@dimen/margin_five"
+          android:id="@+id/tv_po_id"/>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:background="@color/white">
+          <FrameLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/fl_main">
+              <ListView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/lv_orderList"
+                  android:visibility="visible"
+                  android:background="@color/white"
+                  android:layout_marginLeft="@dimen/margin_five"
+                  android:layout_marginRight="@dimen/margin_five"
+                  android:layout_marginBottom="@dimen/margin_five"/>
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_gravity="bottom"
+                  android:id="@+id/ll_bottom"
+                  android:visibility="gone">
+                  <TextView
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:text="@string/accept"
+                      android:gravity="center"
+                      android:background="@drawable/app_button_background"
+                      android:layout_margin="@dimen/margin_five"
+                      android:textColor="@color/white"
+                      android:padding="@dimen/margin_five"
+                      android:textSize="@dimen/activity_textSize_small"
+                      android:id="@+id/tv_accept"/>
+                  <TextView
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:text="@string/reject"
+                      android:gravity="center"
+                      android:background="@drawable/app_button_background"
+                      android:textColor="@color/white"
+                      android:padding="@dimen/margin_five"
+                      android:layout_margin="@dimen/margin_five"
+                      android:textSize="@dimen/activity_textSize_small"
+                      android:id="@+id/tv_reject"/>
+              </LinearLayout>
+          </FrameLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:id="@+id/ll_noData"
+               android:gravity="center"
+               android:layout_gravity="center"
+               android:visibility="visible"
+               android:background="@color/white">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   android:textSize="@dimen/activity_textSize_small_16"
+                   android:textColor="@color/menu_text_color"
+                   android:text="@string/no_orders_available" />
+
+           </LinearLayout>
+       </LinearLayout>
+
+
+
+   </LinearLayout>
+
+</LinearLayout>

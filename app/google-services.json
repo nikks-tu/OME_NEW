@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "424068748084",
+    "firebase_url": "https://ordermadeeasy-41feb.firebaseio.com",
+    "project_id": "ordermadeeasy-41feb",
+    "storage_bucket": "ordermadeeasy-41feb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:424068748084:android:0340f32432aa1146f6cb61",
+        "android_client_info": {
+          "package_name": "com.techuva.ome_new"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "424068748084-t0ktkedcibeigi827uflb4auhuia4vpk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbwkawek5Bz7J11gIbT4STObU2q9S-Gl0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "424068748084-t0ktkedcibeigi827uflb4auhuia4vpk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

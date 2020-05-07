@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/ll_main_layout">
+
+    <TextView
+        android:layout_margin="@dimen/margin_two"
+        android:id="@+id/tv_status_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/menu_text_color"
+        android:text=""
+        android:padding="@dimen/margin_two"
+        android:textSize="@dimen/activity_textSize_small_15" />
+</LinearLayout>

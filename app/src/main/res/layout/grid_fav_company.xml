@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:targetApi="lollipop"
+    app:cardCornerRadius="2dp"
+    android:background="@color/white">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_margin="@dimen/margin_five">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="horizontal"
+           android:layout_margin="@dimen/margin_two">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/zero"
+               android:ellipsize="end"
+               android:ems="3"
+               android:maxLines="1"
+               android:layout_weight="0.7"
+               android:textColor="@color/colorPrimary"
+               android:id="@+id/tv_company_name"
+               android:layout_gravity="start"
+               android:textSize="@dimen/activity_textSize_small"/>
+
+           <CheckBox
+               android:layout_width="0dp"
+               android:layout_weight="0.3"
+               android:layout_height="match_parent"
+               style="@style/FavouriteCompanyStyle"
+               android:textColor="@color/text_color_light"
+               android:checked="true"
+               android:gravity="center"
+               android:focusable="true"
+               android:layout_gravity="center"
+               android:id="@+id/cb_fav_btn"/>
+
+       </LinearLayout>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/tv_company_address"
+           android:layout_margin="@dimen/margin_two"
+           android:textColor="@color/menu_text_color"
+           android:textSize="@dimen/activity_textSize_small_14"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/tv_company_city_name"
+           android:layout_margin="@dimen/margin_two"
+           android:textColor="@color/menu_text_color"
+           android:textSize="@dimen/activity_textSize_small_14"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/tv_company_state_name"
+           android:layout_margin="@dimen/margin_two"
+           android:maxLines="1"
+           android:textColor="@color/menu_text_color"
+           android:textSize="@dimen/activity_textSize_small_14"/>
+
+   </LinearLayout>
+</androidx.cardview.widget.CardView>

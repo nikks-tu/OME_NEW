@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/side_nav_bar"
+    android:gravity="center"
+    android:paddingTop="@dimen/large_view_margin"
+    android:paddingBottom="@dimen/large_view_margin"
+    android:paddingLeft="@dimen/view_margin"
+    android:paddingRight="@dimen/view_margin"
+    android:orientation="horizontal"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/nav_header_desc"
+        android:layout_gravity="center"
+        android:tint="@color/white"
+        app:srcCompat="@drawable/profile"
+        android:layout_margin="@dimen/margin_five"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:padding="@dimen/margin_five"
+       android:layout_gravity="center"
+       android:layout_margin="@dimen/margin_five">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/nav_header_title"
+           android:id="@+id/tv_userName"
+           android:layout_marginLeft="@dimen/margin_five"
+           android:layout_marginRight="@dimen/margin_five"
+           android:textColor="@color/white"
+           android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:visibility="visible">
+           <TextView
+               android:id="@+id/logged_on_text"
+               android:layout_marginTop="@dimen/margin_five"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/white"
+               android:text="@string/app_version_text"
+               android:layout_marginLeft="@dimen/margin_five"
+               android:layout_marginRight="@dimen/margin_five"/>
+           <TextView
+           android:id="@+id/last_logged_time"
+           android:layout_marginTop="@dimen/margin_five"
+           android:layout_width="wrap_content"
+               android:textColor="@color/white"
+           android:layout_height="wrap_content"
+           android:text="@string/app_version" />
+       </LinearLayout>
+   </LinearLayout>
+</LinearLayout>
